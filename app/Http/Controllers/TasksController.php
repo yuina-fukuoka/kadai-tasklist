@@ -76,10 +76,10 @@ class TasksController extends Controller
      */
     public function edit($id)
     {
-         $message = Message::find($id);
+         $task = Task::find($id);
 
-        return view('messages.edit', [
-            'message' => $message,
+        return view('tasks.edit', [
+            'task' => $task,
         ]);
     }
 
